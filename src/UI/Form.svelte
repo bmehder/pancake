@@ -1,12 +1,13 @@
 <script>
   export let title = "";
+  export let titleColor = "";
   export let buttonColor = "";
   export let buttonText = "";
   export let buttonTextColor = "";
 </script>
 
 <div>
-  <h3>{title}</h3>
+  <h3 style="color:{titleColor};">{title}</h3>
   <form>
     <input type="text" placeholder="Enter name..." />
     <input type="email" placeholder="Enter email..." />

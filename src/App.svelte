@@ -38,15 +38,16 @@
 </Hero>
 
 <Section>
-  <HomeContent />
-  <Tabs data={tabData} width="600px" />
-  <Button reflection uppercase background="coral">I Dare You</Button>
+  <HomeContent>
+    <Tabs data={tabData} width="" />
+    <Button reflection uppercase background="coral">I Dare You</Button>
+  </HomeContent>
 </Section>
 
 <Section background="coral">
   <CTA
     heading="A BIG Deal"
-    subtitle="The best is now."
+    subtitle="The best time is now. The best time is now. The best time is now."
     buttonText="Save Now"
     src="https://source.unsplash.com/random/300x250?1" />
   <CTA
@@ -56,7 +57,7 @@
     buttonText="Break Glass" />
 </Section>
 
-<Section full>
+<Section>
   <div class="two-col">
     <FancyCard
       raise
@@ -80,15 +81,20 @@
 <Section background="dodgerblue">
   <Form
     title="Send Us A Message"
+    titleColor="white"
     buttonColor="coral"
     buttonTextColor="white"
     buttonText="Send Message" />
 </Section>
 
 <Section>
-  <div class="two-col">
-    <FancyCard />
-    <FancyCard ribbon />
+  <div class="three-col">
+    <FancyCard metal raise title="One" />
+    <FancyCard metal title="Two" />
+    <FancyCard metal title="Three" />
+    <FancyCard metal title="Four" />
+    <FancyCard metal title="Five" />
+    <FancyCard metal title="Six " />
   </div>
 </Section>
 

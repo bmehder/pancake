@@ -6,9 +6,10 @@
   export let blur = false;
   export let fx = false;
   export let ribbon = false;
+  export let metal = false;
 </script>
 
-<main class:raise>
+<main class:metal>
   <h1 class:blur class:ribbon class:fx contenteditable><span>{title}</span></h1>
   <p class:center>
     <span contenteditable>{@html content}</span>
@@ -60,6 +61,14 @@
 
   .center {
     text-align: center;
+  }
+
+  .metal {
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.1)
+    );
   }
 
   @keyframes fx {

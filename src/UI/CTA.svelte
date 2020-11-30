@@ -45,6 +45,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 2em;
     line-height: 1.25em;
     text-align: center;
     color: white;
@@ -63,7 +64,7 @@
   }
   a {
     display: block;
-    width: 70%;
+    width: 100%;
     padding: 1em 2em;
     font-weight: bold;
     text-align: center;
@@ -93,6 +94,7 @@
     height: 100%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    object-fit: cover;
   }
   .swap {
     order: -1;

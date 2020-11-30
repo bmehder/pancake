@@ -13,13 +13,14 @@
 
 <style>
   section {
-    padding: 3rem 4rem;
     background: white;
+    /* width: 100%; */
   }
   div {
     max-width: 960px;
     margin: 0 auto;
-    width: 100%;
+    padding: 3rem 0;
+    /* width: 100%; */
   }
   .full {
     min-height: 100vh;

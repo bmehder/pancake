@@ -22,9 +22,6 @@
     margin-right: 0.25em;
     vertical-align: -0.4em;
   }
-  blockquote p {
-    display: inline;
-  }
   .shadow {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
   }
