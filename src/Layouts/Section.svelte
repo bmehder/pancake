@@ -6,15 +6,20 @@
 </script>
 
 <section class:full style="background:{background};color:{color};">
-  <slot />
+  <div>
+    <slot />
+  </div>
 </section>
 
 <style>
   section {
+    padding: 3rem 4rem;
+    background: white;
+  }
+  div {
     max-width: 960px;
     margin: 0 auto;
-    padding: 2rem 4rem;
-    background: white;
+    width: 100%;
   }
   .full {
     min-height: 100vh;

@@ -5,13 +5,12 @@
   export let title = "";
   export let color = "white";
   export let background = "";
-  export let backgroundImage = "";
 </script>
 
 <aside
   class:boxed
   class:full
-  style="background:{background};background-image: url({backgroundImage});background-size: cover;background-repeat: no-repeat;">
+  style="background: url({background}) no-repeat center center/cover;background-repeat: no-repeat;">
   <div class:push style="color:{color};">{title}</div>
   <slot />
 </aside>

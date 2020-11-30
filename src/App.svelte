@@ -1,6 +1,7 @@
 <script>
   // Data
   import { tabData } from "./Data/tabData.js";
+  import { tennis } from "./Data/tennisData.js";
 
   // Layout Components
   import Header from "./Layouts/Header.svelte";
@@ -14,6 +15,7 @@
   import FancyCard from "./UI/FancyCard.svelte";
   import Tabs from "./UI/Tabs.svelte";
   import Form from "./UI/Form.svelte";
+  import Timeline from "./UI/Timeline.svelte";
 
   // Content Components
   import HomeContent from "./Content/HomeContent.svelte";
@@ -23,7 +25,7 @@
 
 <Hero
   title="The Demo is Off and Running."
-  backgroundImage="https://source.unsplash.com/random/1600x600/">
+  background="https://source.unsplash.com/random/1600x600/">
   <Button
     shadow
     rounded
@@ -41,15 +43,18 @@
   <Button reflection uppercase background="coral">I Dare You</Button>
 </Section>
 
-<Hero
-  full
-  background="coral"
-  title="Hey, look. It's a full screen hero component.">
+<Section background="coral">
   <CTA
+    heading="A BIG Deal"
+    subtitle="The best is now."
+    buttonText="Save Now"
+    src="https://source.unsplash.com/random/300x250?1" />
+  <CTA
+    swap
     heading="This is HUGE"
     subtitle="You don't want to miss out."
     buttonText="Break Glass" />
-</Hero>
+</Section>
 
 <Section full>
   <div class="two-col">
@@ -72,19 +77,23 @@
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " />
 </Section>
 
-<Hero background="dodgerblue">
+<Section background="dodgerblue">
   <Form
     title="Send Us A Message"
     buttonColor="coral"
     buttonTextColor="white"
     buttonText="Send Message" />
-</Hero>
+</Section>
 
 <Section>
   <div class="two-col">
     <FancyCard />
     <FancyCard ribbon />
   </div>
+</Section>
+
+<Section background="coral">
+  <Timeline data={tennis} />
 </Section>
 
 <Footer background="#394149" color="white">

@@ -23,6 +23,7 @@
     align-items: center;
     width: 600px;
     height: 250px;
+    margin: 2em auto;
     background: white;
     border-radius: 8px;
     box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.25),
